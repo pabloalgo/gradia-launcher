@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema path="/org/gnome/shell/extensions/gradia-launcher/" id="org.gnome.shell.extensions.gradia-launcher">
+    <key name="show-notification" type="b">
+      <default>false</default>
+      <summary>Mostrar notificación</summary>
+      <description>Mostrar notificación cuando se toma un screenshot</description>
+    </key>
+  </schema>
+</schemalist>
