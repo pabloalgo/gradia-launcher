@@ -1,0 +1,7 @@
+{
+    "uuid": "gradia-launcher@pabloib.com",
+    "name": "Gradia Launcher",
+    "description": "Take area screenshots with Gradia editor.\n\nClick the camera icon to capture a screen area, then edit in Gradia.\nRequires Gradia Flatpak: flatpak install flathub be.alexandervanhee.gradia",
+    "shell-version": ["45", "46", "47", "48", "49", "50"],
+    "url": "https://github.com/pabloalgo/gradia-launcher"
+}

@@ -18,3 +18,4 @@ bun.lockb
 # Config local
 .local/
 .user/
+.pi-lens/

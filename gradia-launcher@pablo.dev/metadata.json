@@ -1,8 +1,0 @@
-{
-  "name": "Gradia Launcher",
-  "description": "Lanzador de Gradia con menú de opciones de screenshot",
-  "uuid": "gradia-launcher@pablo.dev",
-  "shell-version": ["50"],
-  "url": "https://github.com/pablo-dev/gradia-launcher",
-  "version": "1.0"
-}
