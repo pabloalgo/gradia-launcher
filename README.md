@@ -73,8 +73,8 @@ journalctl --user -u gnome-shell -f | grep -i "gradia"
 
 ## 📄 Licencia
 
-MIT
+GPL-2.0-or-later — ver [LICENSE](LICENSE)
 
 ## 👤 Autor
 
-Pablo Ibáñez (@pablo-dev)
+Pablo Ibáñez ([@pabloalgo](https://github.com/pabloalgo))
