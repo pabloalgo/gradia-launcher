@@ -75,7 +75,7 @@ Verificar que la extensión Gradia Launcher funciona correctamente en GNOME 50 W
 
 ### Test 9: Desinstalación limpia
 - [ ] Ejecutar `./uninstall.sh`
-- [ ] Verificar que `~/.local/.../extensions/gradia-launcher@pablo.dev` se borró
+- [ ] Verificar que `~/.local/.../extensions/gradia-launcher@pabloib.com` se borró
 - [ ] Verificar que repo `/home/pablo/dev/projects/...` SE MANTIENE
 - [ ] Verificar que icono desapareció del panel
 - [ ] Cerrar sesión y volver a entrar

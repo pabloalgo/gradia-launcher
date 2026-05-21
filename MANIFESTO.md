@@ -10,7 +10,7 @@ screenshot-cut-app/
 ├── install.sh                          # Instalación local
 ├── uninstall.sh                        # Desinstalación local
 ├── .gitignore                          # Git ignore
-└── gradia-launcher@pablo.dev/          # Código extensión
+└── gradia-launcher@pabloib.com/          # Código extensión
     ├── extension.js                   # Lógica principal
     ├── metadata.json                   # Metadatos GNOME Shell
     └── schemas/                        # Configuración
@@ -25,7 +25,7 @@ screenshot-cut-app/
 cd /home/pablo/dev/projects/gnome/screenshot-cut-app
 
 # Editar extensión
-vim gradia-launcher@pablo.dev/extension.js
+vim gradia-launcher@pabloib.com/extension.js
 
 # Probar cambios
 ./install.sh
@@ -39,7 +39,7 @@ vim gradia-launcher@pablo.dev/extension.js
 ./install.sh
 
 # Manual
-cp -r gradia-launcher@pablo.dev ~/.local/share/gnome-shell/extensions/
+cp -r gradia-launcher@pabloib.com ~/.local/share/gnome-shell/extensions/
 ```
 
 ### Desinstalación
@@ -49,16 +49,16 @@ cp -r gradia-launcher@pablo.dev ~/.local/share/gnome-shell/extensions/
 ./uninstall.sh
 
 # Manual
-rm -rf ~/.local/share/gnome-shell/extensions/gradia-launcher@pablo.dev/
+rm -rf ~/.local/share/gnome-shell/extensions/gradia-launcher@pabloib.com/
 ```
 
 ## 📦 Archivos vs Instalación
 
 | Archivo en Repo | Ubicación Instalación | ¿Enlazado? | ¿Se elimina al desinstalar? |
 |-----------------|----------------------|------------|----------------------------|
-| `extension.js` | `~/.local/.../gradia-launcher@pablo.dev/extension.js` | ❌ COPIA | ✅ Sí |
-| `metadata.json` | `~/.local/.../gradia-launcher@pablo.dev/metadata.json` | ❌ COPIA | ✅ Sí |
-| `schemas/*` | `~/.local/.../gradia-launcher@pablo.dev/schemas/*` | ❌ COPIA | ✅ Sí |
+| `extension.js` | `~/.local/.../gradia-launcher@pabloib.com/extension.js` | ❌ COPIA | ✅ Sí |
+| `metadata.json` | `~/.local/.../gradia-launcher@pabloib.com/metadata.json` | ❌ COPIA | ✅ Sí |
+| `schemas/*` | `~/.local/.../gradia-launcher@pabloib.com/schemas/*` | ❌ COPIA | ✅ Sí |
 | `install.sh` | Solo en repo | — | — |
 | `README.md` | Solo en repo | — | — |
 

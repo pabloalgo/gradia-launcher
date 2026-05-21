@@ -26,7 +26,7 @@ Desarrollar y mantener la extensión de GNOME Shell "Gradia Launcher" para GNOME
 
 ```bash
 # Copiar cambios al sistema
-cp -r gradia-launcher@pablo.dev ~/.local/share/gnome-shell/extensions/
+cp -r gradia-launcher@pabloib.com ~/.local/share/gnome-shell/extensions/
 
 # Recargar GNOME Shell (Ctrl+Alt+F2, r, Enter)
 
@@ -41,7 +41,7 @@ journalctl --user -u gnome-shell -f | grep -i "gradia"
 flatpak install flathub be.alexandervanhee.gradia
 
 # Instalar extensión
-cp -r gradia-launcher@pablo.dev ~/.local/share/gnome-shell/extensions/
+cp -r gradia-launcher@pabloib.com ~/.local/share/gnome-shell/extensions/
 ```
 
 ## Code Style
@@ -68,6 +68,6 @@ cp -r gradia-launcher@pablo.dev ~/.local/share/gnome-shell/extensions/
 
 ## Files
 
-- `gradia-launcher@pablo.dev/extension.js` - Código principal
-- `gradia-launcher@pablo.dev/metadata.json` - Metadatos
-- `gradia-launcher@pablo.dev/schemas/` - Configuración GSettings
+- `gradia-launcher@pabloib.com/extension.js` - Código principal
+- `gradia-launcher@pabloib.com/metadata.json` - Metadatos
+- `gradia-launcher@pabloib.com/schemas/` - Configuración GSettings

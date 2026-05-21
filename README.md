@@ -1,80 +1,55 @@
-# Gradia Launcher - GNOME Shell Extension
+# Gradia Launcher — GNOME Shell Extension
 
-## 📸 Descripción
+Click the camera icon in the top bar to take an area screenshot with [Gradia](https://github.com/AlexxNB/Gradia).
 
-Extensión de GNOME Shell para GNOME 50 que añade un lanzador de Gradia con menú de opciones de screenshot en el panel.
+## Install
 
-## ✨ Características
-
-- Icono de cámara en el panel de GNOME
-- Menú click izquierdo con 4 opciones:
-  - 📸 **Capturar Área** - Screenshot interactivo con selección de área
-  - 🖥️ **Pantalla Completa** - Captura todo el escritorio
-  - 🪟 **Ventana** - Captura la ventana activa
-  - 📝 **Abrir Gradia** - Abre Gradia sin screenshot
-
-## 🚀 Instalación
-
-### Manual
+Requires [Gradia Flatpak](https://flathub.org/apps/be.alexandervanhee.gradia):
 
 ```bash
-# Copiar extensión
-cp -r gradia-launcher@pablo.dev ~/.local/share/gnome-shell/extensions/
-
-# Activar vía dbus (opcional)
-dbus-send --session --dest=org.gnome.Shell --type=method_call \
-  /org/gnome/Shell \
-  org.gnome.Shell.Extensions.EnableExtension \
-  string:"gradia-launcher@pablo.dev"
+flatpak install flathub be.alexandervanhee.gradia
 ```
 
-Luego:
-1. Cierra sesión y vuelve a entrar
-2. Ve a **Aplicaciones → Extensiones**
-3. Activa **"Gradia Launcher"**
-
-### Desde el repo
+Then:
 
 ```bash
-# Clonar e instalar
-git clone <repo-url>
-cd screenshot-cut-app
-cp -r gradia-launcher@pablo.dev ~/.local/share/gnome-shell/extensions/
+git clone https://github.com/pabloalgo/gradia-launcher.git
+cd gradia-launcher
+./install.sh
 ```
 
-## 📦 Dependencias
+Log out and back in, then enable **Gradia Launcher** in *Extensions*.
 
-- **Gradia** (Flatpak): `flatpak install flathub be.alexandervanhee.gradia`
-- **GNOME Shell 50+**
-- **Flatpak runtime**
+## Usage
 
-## 🛠️ Desarrollo
+Click the 📷 camera icon in the panel → Gradia opens in area-capture mode → select area → edit in Gradia.
 
-### Estructura
-
-```
-gradia-launcher@pablo.dev/
-├── extension.js                          # Código principal
-├── metadata.json                        # Metadatos de extensión
-└── schemas/
-    └── org.gnome.shell.extensions.gradia-launcher.gschema.xml
-```
-
-### Modificar
-
-Edita `gradia-launcher@pablo.dev/extension.js` y recarga GNOME Shell.
-
-### Debug
+## Uninstall
 
 ```bash
-# Ver logs
-journalctl --user -u gnome-shell -f | grep -i "gradia"
+./uninstall.sh
 ```
 
-## 📄 Licencia
+## Development
 
-GPL-2.0-or-later — ver [LICENSE](LICENSE)
+```
+gradia-launcher@pabloib.com/
+├── extension.js
+└── metadata.json
+```
 
-## 👤 Autor
+Edit, reinstall, and reload GNOME Shell.
 
-Pablo Ibáñez ([@pabloalgo](https://github.com/pabloalgo))
+Debug:
+
+```bash
+journalctl --user -u gnome-shell -f | grep -i gradia
+```
+
+## License
+
+GPL-2.0-or-later
+
+## Author
+
+[@pabloalgo](https://github.com/pabloalgo) — [pabloib.com](https://pabloib.com)
